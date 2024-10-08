@@ -54,4 +54,8 @@ Após a **Análise Exploratória dos Dados** não foi encontrado _out liers_ nas
 
 Podemos observar um melhor desenpenho no **Modelo 2** com o **R²** alto e **RMSE** baixo após retirada das colunas  _'AttendanceRate', 'StudyHoursPerWeek'_ no _dataset [3], visto que, os **coeficientes** das duas colunas estavam baixos e o **R²** apresentou uma taxa baixa no *Modelo 1**, conforme observamos acima [1].
 
-Apesar dos dados serem fictícios (extraídos do site da Kaggle), podemos observar como a escolha de manter ou não colunas no modelo de dados interfere positiva ou negativamente no desenpenho modelo. Cabe também ressaltar a importância no entendimento do _business_ que auxilia na tomada da decisão de manter ou não, caso tivessemos que manter a escolha por outro _modelo de machine learning_ poderia ser uma melhor escolha.
+### Comparativo Real x Previsto
+
+![grafico comparativo](https://github.com/user-attachments/assets/1fb9c42f-85e2-4de2-b5e5-ea265be516ba)
+
+Apesar dos dados serem fictícios (extraídos do site da Kaggle) e base de dados pequena (10 linhas), podemos observar como a escolha de manter ou não colunas no modelo de dados interfere positiva ou negativamente no desenpenho modelo. Cabe também ressaltar a importância no entendimento do _business_ que auxilia na tomada da decisão de manter ou não, caso tivessemos que manter a escolha por outro _modelo de machine learning_ poderia ser uma melhor escolha.
