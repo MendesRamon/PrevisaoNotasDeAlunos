@@ -32,7 +32,17 @@ O **Conjunto de Dados de Desempenho Estudantil** é uma ferramenta versátil par
 
 Foram Treinados de um mesmo conjunto de dados dois modelo partindo da **Regressão Linear Múltipla** para prever através do comportamento do aluno qual é a possível nota em um semestre/prova/ano que pode alcançar.
 
-Após a **Análise Exploratória dos Dados** não foi encontrado _out liers_ nas notas dos alunos, porém, foi visto uma distribuição alta de notas entre 85 - 90 e uma correlação entre _'AttendanceRate'_ e _'FinalGrade'_.
+Após a **Análise Exploratória dos Dados** não foi encontrado _out liers_ nas notas dos alunos
+
+![OUTLIER](https://github.com/user-attachments/assets/12625414-f43a-4018-8045-03000f699dc7)
+
+Porém, foi visto uma distribuição alta de notas entre 85 - 90 
+
+![DISTR](https://github.com/user-attachments/assets/22b773eb-75ca-4cb3-aaba-393453a66e8e)
+
+e uma correlação entre _'AttendanceRate'_ e _'FinalGrade'_.
+
+![CORR](https://github.com/user-attachments/assets/61b815f4-5bc7-4bc2-abea-4f7bb2263543)
 
 **[1]** O treinamento do **Modelo 1** obtivemos:
 
@@ -41,6 +51,11 @@ Após a **Análise Exploratória dos Dados** não foi encontrado _out liers_ nas
     MSE: 21.237413230597294
     RMSE: 4.608406799599759
 
+- Resultado do treinamento na base de teste (30% da base) no **Modelo 1**:
+
+![MODELO 1](https://github.com/user-attachments/assets/27604844-07ef-465e-8e24-228640e5a460)
+    
+
 **[2]** Enquanto no treinamento do **Modelo 2** obtivemos:
 
     R2: 0.9900207610042044
@@ -48,11 +63,15 @@ Após a **Análise Exploratória dos Dados** não foi encontrado _out liers_ nas
     MSE: 0.6187128177393232
     RMSE: 0.786583001176178
 
+- Resultado do treinamento na base de teste (30% da base) no **Modelo 2**:
+
+![MODELO 2](https://github.com/user-attachments/assets/b1726922-e5c4-497d-8d98-a9cbc5b59216)
+
   **[3]** Coeficientes antes da exclusão das colunas  _'AttendanceRate' [ 0.24510334], 'StudyHoursPerWeek'_ [-0.53621842]:
   
   **Coeficientes:** [ 0.24510334, -0.53621842, 1.02232203, 1.68929826, 1.27426381, 2.0141159, 1.36902269]
 
-Podemos observar um melhor desenpenho no **Modelo 2** com o **R²** alto e **RMSE** baixo após retirada das colunas  _'AttendanceRate', 'StudyHoursPerWeek'_ no _dataset [3], visto que, os **coeficientes** das duas colunas estavam baixos e o **R²** apresentou uma taxa baixa no *Modelo 1**, conforme observamos acima [1].
+Podemos observar um melhor desenpenho no **Modelo 2** com o **R²** alto e **RMSE** baixo após retirada das colunas  _'AttendanceRate', 'StudyHoursPerWeek'_, embora o _'AttendanceRate'_ mostrou uma boa correlação quando comparado com o _'FinalGrade'_, devemos considerar o coeficiente após a regressão linear múltipla. No _dataset [3], visto que, os **coeficientes** das duas colunas estavam baixos e o **R²** apresentou uma taxa baixa no *Modelo 1**, conforme observamos acima [1].
 
 ### Comparativo Real x Previsto
 
